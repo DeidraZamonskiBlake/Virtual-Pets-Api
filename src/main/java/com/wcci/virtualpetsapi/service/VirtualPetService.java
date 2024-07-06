@@ -1,11 +1,11 @@
-package com.wcci.virtualPetAPI.service;
+package com.wcci.virtualpetsapi.service;
 
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.wcci.virtualPetAPI.entity.VirtualPet;
-import com.wcci.virtualPetAPI.repository.VirtualPetRepository;
+import com.wcci.virtualpetsapi.entity.VirtualPet;
+import com.wcci.virtualpetsapi.repository.VirtualPetRepository;
 
 @Service
 public class VirtualPetService {

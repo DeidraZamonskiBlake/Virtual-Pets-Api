@@ -1,14 +1,15 @@
-package com.wcci.virtualPetAPI;
+package com.wcci.virtualpetsapi;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
-import com.wcci.virtualPetAPI.entity.VirtualPet;
-import com.wcci.virtualPetAPI.repository.VirtualPetRepository;
+import com.wcci.virtualpetsapi.entity.VirtualPet;
+import com.wcci.virtualpetsapi.repository.VirtualPetRepository;
 
 @Component
-public class Populator {
+public class Populator implements CommandLineRunner{
+
     @Autowired
     private VirtualPetRepository virtualPetRepository;
 
@@ -28,4 +29,6 @@ public class Populator {
         virtualPetRepository.save(susan);
         virtualPetRepository.save(sebastian);
     }
+
+
 }

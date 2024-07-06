@@ -1,4 +1,4 @@
-package com.wcci.virtualPetAPI.controller;
+package com.wcci.virtualpetsapi.controller;
 
 import java.util.List;
 
@@ -55,4 +55,5 @@ public class VirtualPetController {
         if (!isDeleted) return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
         return ResponseEntity.noContent().build();
     }
+
 }
